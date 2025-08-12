@@ -1,10 +1,10 @@
 class CreatePackageItemDto {
   itemName: string;
   quantity: number;
-  unit: string;
+  unit: number;
   packageId: number;
   name: string;
-  
+  price: number;
 }
 
 export class CreatePackageDto {

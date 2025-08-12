@@ -13,6 +13,10 @@ export class PackageItem {
 
   @Column()
   quantity: number;
+  @Column()
+  unit: number;
+  @Column()
+  price: number;
 
   @ManyToOne(() => Package, (pkg) => pkg.items, { onDelete: 'CASCADE' })
   package: Package;

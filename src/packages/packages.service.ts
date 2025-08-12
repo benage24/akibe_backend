@@ -25,7 +25,8 @@ export class PackagesService {
       items: createPackageDto.items.map((item) => ({
         name: item.name,
         quantity:item.quantity,
-        unit:item.unit
+        unit:item.unit,
+        price:item.price
       })),
     };
     const packageEntity = this.packageRepo.create(data);
